@@ -1,0 +1,15 @@
+Shell Flash
+ Run FF.nsh
+
+Windows Flash (Run as administrator)
+ Run FF.bat for Windows 64bit OS.
+
+Crisis recovery
+ 1. Copy MPxxxx.cap to root directory of USB key and rename to BIOS.cap.
+ 2. Internal KB press "Fn + R".
+ 3. Plug in AC and the LED will blink.
+ 4. Press power button.
+ 5. Wait flash bios.
+
+Keyboard FVM update
+ Run sf.nsh in internal shell for FVM update.

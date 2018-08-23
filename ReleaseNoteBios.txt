@@ -1,0 +1,638 @@
+Release note:
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.26 Version: BIOS//EC//Customer = 0.26//0.24//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0021.2014.0116.1817
+ 2. BIOS version2 = 0.26
+ 3. EC version    = 0.24
+ 4. Release Date  = 2014/01/16
+ 5. Checksum      = [08A4]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on EF10MI2 v0.25.
+ 2. TD code update.
+ 3. Modify thermal setting for DPTF.
+    Passive trip point from 75 degree to 70 degree.
+    PL1 from 1.6w~2.4w to 1.2w~2.0w.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   FRC           = 1.2.1
+ 2   MCU           = M0C3067331E
+ 3   GOP           = 7.1.1005
+ 4   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+ 
+ 
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.25 Version: BIOS//EC//Customer = 0.25//0.24//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0020.2014.0109.2013
+ 2. BIOS version2 = 0.25
+ 3. EC version    = 0.24
+ 4. Release Date  = 2014/01/09
+ 5. Checksum      = [2C65]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on EF10MI2 v0.24.
+ 2. Fix right site USB port can't autorun issue.
+ 3. Reserved 8K size in PDR region.
+ 4. Update thermal probe code.
+ 5. Update EC flash tool for support GD25Q20BTIGR.
+ 6. Default enable CPU Turbo boost.
+ 7. Default enable DPTF for Windows 8.1.
+ 8. Update setup view.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   FRC           = 1.2.1
+ 2   MCU           = M0C3067331E
+ 3   GOP           = 7.1.1005
+ 4   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.24 Version: BIOS//EC//Customer = 0.24//0.23//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0019.2013.1223.1002
+ 2. BIOS version2 = 0.24
+ 3. EC version    = 0.23
+ 4. Release Date  = 2013/12/23
+ 5. Checksum      = [746A]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on EF10MI2 v0.22.
+ 2. Disable DPTF and correct N2806 thermal Critical/Passive trip point.
+ 3. Modified Fn+F6 behavior.
+ 4. Fix boot fail issue.
+ 5. Disable card reader bootable function.
+ 6. Fix touch pad lose issue.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   FRC           = 1.2.1
+ 2   MCU           = M0C3067331E
+ 3   GOP           = 7.1.1005
+ 4   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.22 Version: BIOS//EC//Customer = 0.22//0.22//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0017.2013.1216.1046
+ 2. BIOS version2 = 0.22
+ 3. EC version    = 0.22
+ 4. Release Date  = 2013/12/16
+ 5. Checksum      = [61B2]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on EF10MI2 v0.21.
+ 2. Update verb table (1.6w).
+ 3. Fix WHCK / USB Exposed Port System Test.
+ 4. Correct camera _PLD for WHCK / Webcam Location,Registration,Metadata,and Dependency Tests.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   FRC           = 1.2.1
+ 2   MCU           = M0C3067331E
+ 3   GOP           = 7.1.1005
+ 4   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.21 Version: BIOS//EC//Customer = 0.21//0.21//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0016.2013.1128.1342
+ 2. BIOS version2 = 0.21
+ 3. EC version    = 0.21
+ 4. Release Date  = 2013/11/28
+ 5. Checksum      = [1987]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.20.
+ 2. Allow BIOS update when AC mode or battery capacity is greater than 30%.
+ 3. TD code update for TPM initial fail issue.
+ 4. Remove quick launch button function.
+ 5. Build both production/pre-production TXE.
+    TXE1060s.bin  => TXE f/w for production SOC. C phase M/B.
+    TXE1060u.bin  => TXE f/w for ES sample SOC. A/B phase M/B.
+ 6. Default disable CPU Turbo boost.
+ 7. Change boot device priority to HDD > USB > PXE.
+ 8. Update GOP driver to 1005 for graphic driver 15.33.5.64.3355.
+ 9. Update MCU.
+ 10. Fix crisis not working issue.
+ 11. Fix function key not working or very lag after resume from sleep.
+ 12. Update ELAN _HID.
+ 13. Fix G-sensor function abnormal issue.
+ 14. Modify SETUP view for CMPC.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   FRC           = 1.2.1
+ 2   MCU           = M0C3067331E
+ 3   GOP           = 7.1.1005
+ 4   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.20 Version: BIOS//EC//Customer = 0.20//0.20//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0014.2013.1119.1416
+ 2. BIOS version2 = 0.20
+ 3. EC version    = 0.20
+ 4. Release Date  = 2013/11/19
+ 5. Checksum      = [749E]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.17.
+ 2. Update kernel to 3.1.0.82.
+ 3. Update verb table.
+ 4. Support C1 phase M/B.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   FRC           = 1.2.1
+ 2   MCU           = M0C3067331A
+ 3   GOP           = 7.1.1003
+ 4   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.17 Version: BIOS//EC//Customer = 0.17//0.14//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0013.2013.1118.1137
+ 2. BIOS version2 = 0.17
+ 3. EC version    = 0.14
+ 4. Release Date  = 2013/11/18
+ 5. Checksum      = [19BD]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.16.
+ 2. Update EC flash tool.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.16 Version: BIOS//EC//Customer = 0.16//0.13//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0012.2013.1115.1610
+ 2. BIOS version2 = 0.16
+ 3. EC version    = 0.13
+ 4. Release Date  = 2013/11/15
+ 5. Checksum      = [B877]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.15.
+ 2. Fix PS2 device not working after update BIOS first time reboot.
+ 3. Fix airplane mode LED not working issue.
+ 4. TD code update.
+ 5. Enable rotation function in GOP driver.
+ 6. Correct CPU temperature by different CPU Tjmax.
+ 7. Fix OA3 injection fail after resume from S3.
+ 8. Show EC version in Windows System Information.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.15 Version: BIOS//EC//Customer = 0.15//0.12//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0011.2013.1106.1810
+ 2. BIOS version2 = 0.15
+ 3. EC version    = 0.12
+ 4. Release Date  = 2013/11/06
+ 5. Checksum      = [18A1]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.14.
+ 2. Update kernel to 3.1.0.75. (Note, flash map have changed, request to update TXE and BIOS by FPT.)
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.14 Version: BIOS//EC//Customer = 0.14//0.12//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0010.2013.1105.1514
+ 2. BIOS version2 = 0.14
+ 3. EC version    = 0.12
+ 4. Release Date  = 2013/11/05
+ 5. Checksum      = [33E5]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.13.
+ 2. Change BIOS region to 4M size. (Note, Change flash map request to update TXE and BIOS by FPT.)
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.13 Version: BIOS//EC//Customer = 0.13//0.12//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0009.2013.1030.2254
+ 2. BIOS version2 = 0.13
+ 3. EC version    = 0.12
+ 4. Release Date  = 2013/10/30
+ 5. Checksum      = [4FF4]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.12.
+ 2. Remove GPIO debug code, it will cause WLAN to be disable by h/w pin.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.12 Version: BIOS//EC//Customer = 0.12//0.12//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0008.2013.1030.1804
+ 2. BIOS version2 = 0.12
+ 3. EC version    = 0.12
+ 4. Release Date  = 2013/10/30
+ 5. Checksum      = [D3D4]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.11.
+ 2. Fix Light-Sensor not working issue.
+ 3. TD code update.
+ 4. Fix S3 issue.
+ 5. Using Intel BGRT logo.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.11 Version: BIOS//EC//Customer = 0.11//0.11//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0007.2013.1021.1629
+ 2. BIOS version2 = 0.11 - X64
+ 3. EC version    = 0.11
+ 4. Release Date  = 2013/10/21
+ 5. Checksum      = [34A6]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.10.
+ 2. Support PXE.
+ 3. Support card reader bootable.
+ 4. Support BIOS crisis recovery. (see FlashUsage.txt)
+ 5. Correct webcam mirror/non-mirror status.
+ 6. Fix reboot fail issue.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.10 Version: BIOS//EC//Customer = 0.10//0.10//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0006.2013.1008.2214
+ 2. BIOS version2 = 0.10 - X64
+ 3. EC version    = 0.10
+ 4. Release Date  = 2013/10/08
+ 5. Checksum      = [B9B1]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.05.
+ 2. For B/C phase SMT.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.05 Version: BIOS//EC//Customer = 0.05//0.05//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0005.2013.1008.2143
+ 2. BIOS version2 = 0.05 - X64
+ 3. EC version    = 0.05
+ 4. Release Date  = 2013/10/08
+ 5. Checksum      = [F47B]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.04.
+ 2. Fix non-TPM M/B boot fail with POSTCODE 0x41 issue.
+ 3. Support throttling.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.04 Version: BIOS//EC//Customer = 0.04//0.05//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0004.2013.1007.2138
+ 2. BIOS version2 = 0.04 - X64
+ 3. EC version    = 0.05
+ 4. Release Date  = 2013/10/07
+ 5. Checksum      = [E0A8]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.03.
+ 2. Modify TXE SPI speed to 50M and disable system spectrum.
+ 3. Modify GOP to disable eDP spectrum.
+ 4. Support TD function.
+ 5. Default enable C-State.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.03 Version: BIOS//EC//Customer = 0.03//0.05//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0003.2013.1003.2025
+ 2. BIOS version2 = 0.03 - X64
+ 3. EC version    = 0.05
+ 4. Release Date  = 2013/10/03
+ 5. Checksum      = [0022]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.02.
+ 2. Update BIOS kernel from 3.1.0.54 to 3.1.0.58.
+ 3. Update verb table.
+ 4. Update TXE for SPI speed change to 33M and enable system spectrum. 
+ 5. Light sensor is working now. (Fn+F9 -> turn on/off light sensor)
+ 6. Mapping CPU temperature to ECRAM. (need install MBI driver)
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.02 Version: BIOS//EC//Customer = 0.02//0.03//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0002.2013.0918.1716
+ 2. BIOS version2 = 0.02 - X64
+ 3. EC version    = 0.03
+ 4. Release Date  = 2013/09/18
+ 5. Checksum      = [676E]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.01.
+ 2. Update BIOS kernel from 3.1.0.49 to 3.1.0.54.
+ 3. Update GOP to 1029.
+ 4. Modify default hot key. DEL->Setup, F11->Boot Menu, F5->Internal Shell. 
+ 5. Fix internal Keyboard can't into BIOS menu issue.
+ 6. Show UUID in Setup main page.
+ 7. Support Fn+F1 for Airplane mode.
+ 8. Implement g-sensor/light sensor/thermal probe.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1029
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+ See ReleaseNoteEc.txt
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.01 Version: BIOS//EC//Customer = 0.01//0.01//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0001.2013.0906.1820
+ 2. BIOS version2 = 0.01 - X64
+ 3. EC version    = 0.01
+ 4. Release Date  = 2013/09/06
+ 5. Checksum      = [5879]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. Base on v0.00.
+ 2. Update BIOS kernel from 3.1.0.43 to 3.1.0.49.
+ 3. Update TXE to 1060.
+ 4. Update GOP to 1028.
+ 5. Update verb table.
+ 6. Quick key button will launch IE. (only for debug)
+ 7. Modify T/P _HID.
+ 8. Fix Setup boot page lag issue.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1028
+ 2   TXE           = 1.0.2.1060
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+Release Ver:0.01.00 Date:2013-09-06
+The first release. 
+
+
+==============================================================================
+*** EF10MI2 BIOS Release Notes ***
+==============================================================================
+---------------------------------------------------------------------------
+0.00 Version: BIOS//EC//Customer = 0.00//0.00//
+---------------------------------------------------------------------------
+1.0 BIOS ROM File and revision information.
+ 1. BIOS version  = MPBYT10A.86A.0000.2013.0822.1155
+ 2. BIOS version2 = 0.00 - X64
+ 3. EC version    = 0.00
+ 4. Release Date  = 2013/08/22
+ 5. Checksum      = [3AB9]
+
+---------------------------------------------------------------------------
+2.0 BIOS Release Notes
+ 1. First BIOS form SMT.
+
+-----------------------------------------------------------------------------
+3.0
+ 1   GOP           = 7.0.1026
+ 2   TXE           = 1.0.0.1049
+
+-----------------------------------------------------------------------------
+4.0 EC Release Notes
+------------------------------------------------------------------------------
+2013/08/22    EF10MI2 EC Version 0.00.00		
+------------------------------------------------------------------------------
+1. EF10MI2 EC version 0.00.00 release for A phase SMT.

@@ -1,0 +1,109 @@
+;*****************************************************************************#
+;* --  R E L E A S E   N O T E S  --            ECS Embedded Controller      *#
+;*                                                                           *#
+;* Project Name: EF10                                 	        	     *#
+;*                                                                           *#
+;* Embedded Controller : ITE IT8528                                          *#
+;*****************************************************************************#
+-------------------------------------------------------------------------------
+Release Ver:0.24.00 Date:2014-01-09
+.The current checkpoint of stop charging modify from 200mA to 120mA. 
+.HP power demand control for all M/B.
+.Light sensor default set to disabled.
+
+-------------------------------------------------------------------------------
+Release Ver:0.23.00 Date:2013-12-20
+. Import ES10MI2_BC_Phase_Thermal_Table_20131218.pdf
+. Modified Fn+F6 behavior.
+
+-------------------------------------------------------------------------------
+Release Ver:0.22.00 Date:2013-12-11
+. EC report ¡§1025¡¨to host at probe unplugged.
+. Solved the USB can't changing at system into S3.
+. Solved the system shutdown issue when unplug AC.
+. Solved the Battery change to full. But the percentages show 99%.
+. The changing current at solar with AC same.
+
+-------------------------------------------------------------------------------
+Release Ver:0.21.00 Date:2013-11-28
+. Import ES10MI2_BC_Phase_Thermal_Table_20131119.pdf
+. Support touchpad on/off for MI1.
+. Support FVM function.
+. EC ROM change to 80k for FVM.
+
+-------------------------------------------------------------------------------
+Release Ver:0.20.00 Date:2013-11-19
+. Support solar changing.
+. Support C1 phase M/B.
+
+-------------------------------------------------------------------------------
+Release Ver:0.14.00 Date:2013-11-18
+. Solved the system cold boot issue.
+
+-------------------------------------------------------------------------------
+Release Ver:0.13.00 Date:2013-11-15
+. Solved the system output the "Bo" sound when shutdown or suspend.
+. Modified power on Sequence.
+. Open 0x3F event of G sensor.
+. Import FVM function.
+
+-------------------------------------------------------------------------------
+Release Ver:0.12.00 Date:2013-10-30
+. Fixed K/B Fn+key issue 
+. Fixed power noise and power consumption issue.
+. Fixed the card reader lost after S3 resume.
+
+-------------------------------------------------------------------------------
+Release Ver:0.11.00 Date:2013-10-21
+. Support crisis mode.
+. Fixed cardreader issue.
+. Modified init table of change IC to improve the POWER noise issue.
+
+-------------------------------------------------------------------------------
+Release Ver:0.10.00 Date:2013-10-03
+. Version 0.05 change to 0.10 for B phase SMT
+
+-------------------------------------------------------------------------------
+Release Ver:0.05.00 Date:2013-10-03
+. Support wake up charging
+
+-------------------------------------------------------------------------------
+Release Ver:0.04.00 Date:2013-09-26     Checksum : 0C5A
+. Remove Rotation function.
+. EC send the Q event 2A to support Light sensor.
+. Support internal LAN wake up (G3/S5/S4)
+. Fixed 1390_0054
+        Hibernate test(AC mode)
+        1. into hibernate
+        2. press Fn+F2 
+        3. press power button
+        4. system will turn off after turn on
+
+. Fixed 1390_0072
+        check charge LED state
+        charge LED state not meet EC SPEC.
+
+. Fixed 1390_0075
+        Low battery power on test
+        EC SPEC define : battery capacity<=4%   system can't be power on
+        test result: battery capacity <=4% press power button twics, system will turn on  
+
+. Fixed 1390_0076 
+        Power off charge test
+        battery capacity<1% plug in adapter to charge, wait about 20min,battery capacity>60%(too fast~)
+
+-------------------------------------------------------------------------------
+Release Ver:0.03.00 Date:2013-09-16     Checksum : 1CC6
+.Solved the battery charging problem.
+
+-------------------------------------------------------------------------------
+Release Ver:0.02.00 Date:2013-09-14     Checksum : 01C4
+. Remove touchpad on/off function.
+. Modify battery code for EF10.
+. Fixed LED issue.
+
+-------------------------------------------------------------------------------
+Release Ver:0.01.00 Date:2013-09-06
+The first release. 
+
+
